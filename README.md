@@ -1,8 +1,7 @@
 # Week 7 Lab Report: Zero-Knowledge Proof & Code Obfuscation
 
-**Student Name:** [Your Name]  
-**Date:** [Date]  
-**Course:** Cryptography and Security Engineering
+**Student Name:** Tornike 
+**Date:** Tchabukiani
 
 ---
 
