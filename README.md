@@ -1,7 +1,7 @@
 # Week 7 Lab Report: Zero-Knowledge Proof & Code Obfuscation
 
-**Student Name:** Tornike 
-**Date:** Tchabukiani
+**Student Name:** Tornike Tchabukiani
+**Date:** 25.11.2025
 
 ---
 
