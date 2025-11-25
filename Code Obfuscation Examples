@@ -1,0 +1,110 @@
+# ============================================
+# ORIGINAL CODE - Fibonacci Function
+# ============================================
+
+def fibonacci(n):
+    """Calculate the nth Fibonacci number using iteration"""
+    if n <= 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        a, b = 0, 1
+        for i in range(2, n + 1):
+            a, b = b, a + b
+        return b
+
+# Test
+print("Original:", fibonacci(10))  # Output: 55
+
+
+# ============================================
+# MANUAL OBFUSCATION
+# ============================================
+
+# Technique: Variable Renaming & Comment Removal
+def x7f2a(p9k):
+    if p9k <= 0: return 0
+    elif p9k == 1: return 1
+    else:
+        q1, w2 = 0, 1
+        for e3 in range(2, p9k + 1): q1, w2 = w2, q1 + w2
+        return w2
+
+print("Manual Obfuscation:", x7f2a(10))
+
+
+# ============================================
+# AUTOMATIC OBFUSCATION (Advanced Techniques)
+# ============================================
+
+# Technique 1: Control Flow Obfuscation + Confusing Identifiers
+def _0O00(O0O0):
+    _00O = {0: lambda: 0, 1: lambda: 1}
+    if O0O0 in _00O: return _00O[O0O0]()
+    O00O, _O0O = 0, 1
+    for _ in [None] * (O0O0 - 1):
+        O00O, _O0O = _O0O, O00O + _O0O
+    return _O0O
+
+print("Automatic Obfuscation (Control Flow):", _0O00(10))
+
+
+# Technique 2: String Encoding + Runtime Evaluation
+import base64
+encoded = base64.b64encode(b'''
+def calc(n):
+    return n if n <= 1 else calc(n-1) + calc(n-2)
+result = calc(10)
+''')
+
+exec(compile(base64.b64decode(encoded), '<string>', 'exec'))
+print("Automatic Obfuscation (Encoding):", result)
+
+
+# ============================================
+# OBFUSCATION EXPLANATION
+# ============================================
+
+print("\n" + "=" * 60)
+print("OBFUSCATION TECHNIQUES USED:")
+print("=" * 60)
+
+print("\n1. MANUAL OBFUSCATION:")
+print("   - Identifier Renaming: fibonacci → x7f2a, n → p9k")
+print("   - Removed all comments and docstrings")
+print("   - Single-line compression where possible")
+print("   - Purpose: Basic readability barrier")
+print("   - Weakness: Easy to reverse with static analysis")
+
+print("\n2. AUTOMATIC OBFUSCATION (Type 1 - Control Flow):")
+print("   - Confusing variable names (0O00, O0O0, mixing O and 0)")
+print("   - Lambda functions in dictionaries")
+print("   - Control flow flattening")
+print("   - Dead code injection")
+print("   - Purpose: Harder to follow program logic")
+
+print("\n3. AUTOMATIC OBFUSCATION (Type 2 - Encoding):")
+print("   - Base64 encoding of source code")
+print("   - Runtime evaluation with exec()")
+print("   - Code hidden until execution")
+print("   - Purpose: Hide source from static analysis")
+print("   - Weakness: Can be captured at runtime")
+
+print("\n" + "=" * 60)
+print("WHY USE OBFUSCATION:")
+print("=" * 60)
+print("• Intellectual Property Protection")
+print("• Prevent reverse engineering of algorithms")
+print("• Hide business logic and trade secrets")
+print("• Make tampering more difficult")
+print("• Delay competitor analysis")
+
+print("\n" + "=" * 60)
+print("LIMITATIONS:")
+print("=" * 60)
+print("• NOT true encryption - can be reversed with effort")
+print("• Adds runtime overhead (especially encoding methods)")
+print("• Makes debugging much harder")
+print("• Security through obscurity is not real security")
+print("• Determined attackers can still reverse-engineer")
